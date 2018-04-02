@@ -5,9 +5,9 @@
       xmlns:f="http://java.sun.com/jsf/core"
       xmlns:h="http://java.sun.com/jsf/html">
 
-<h:head>
-    <title>JSF 2.0 Hello World</title>
-</h:head>
-<h:body>
-</h:body>
+
+    UserId <h:inputText value="#{showMyName.username}"></h:inputText>
+    Password<h:inputText value="#{showMyName.password}"></h:inputText>
+    <h:commandButton value="Login" action="#{showMyName.display}"></h:commandButton>
+
 </html>
