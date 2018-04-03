@@ -3,6 +3,8 @@ package com.MidExam;
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.RequestScoped;
 import java.io.Serializable;
+import java.util.LinkedList;
+import java.util.List;
 
 @ManagedBean
 @RequestScoped
@@ -12,7 +14,8 @@ public class Human implements Serializable {
     private String email;
 
     public String callMe() {
-     name=name;
+        List<String> stack=new LinkedList<String>();
+
         return "call";
     }
 
