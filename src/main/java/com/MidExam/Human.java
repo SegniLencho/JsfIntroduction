@@ -9,18 +9,27 @@ import java.util.List;
 @ManagedBean
 @RequestScoped
 public class Human implements Serializable {
+    String sex;
     private String name;
     private String phone;
     private String email;
 
+    public String getSex() {
+        return sex;
+    }
+
+    public void setSex(String sex) {
+        this.sex = sex;
+    }
+
     public String callMe() {
-        List<String> stack=new LinkedList<String>();
+        System.out.println("Your Gender is " + sex);
 
         return "call";
     }
 
     public String emailMe() {
-
+        System.out.println("Your Gender is " + sex);
         return "email";
     }
 
